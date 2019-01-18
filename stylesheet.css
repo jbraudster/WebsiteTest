@@ -1,0 +1,153 @@
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+
+body {
+	margin: 0;
+	background-image: url('');
+	background-color: #cccccc; 
+    color: #d9d9d9;
+	font-family: Verdana, Arial, sans-serif;
+	   
+}
+
+nav { 	
+	font-weight: bold;
+	text-align: center;
+	float: none; width: auto; padding: 0; 
+	background-color: #73192A;
+	margin: auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 120%;
+	text-shadow: 3px 3px #000000;
+}
+
+nav a:link { color: #000000; }
+nav a:visited { color: #808080; }
+nav a:hover { color: #c0c0c0; }
+
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+nav li { 
+	display: inline; 
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+main {
+	padding: 20px;
+	background-color: #0d0d0d;
+	margin-left: 20vw;
+	margin-right: 20vw;
+}
+
+main a:link { color: #3399ff; }
+main a:visited { color: #ccffff; }
+main a:hover { color: #FFD700; }
+
+
+form {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+input {
+	margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+	margin-bottom: 0;
+}
+
+header {
+	background-color: #000000;
+	background-image: url('gamer.jpg');	
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 100px;
+	padding-top: 175px;
+	padding-bottom: 25px;
+}
+
+	
+header h1 { 
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: Georgia, "Times New Roman", serif;
+	text-align: center;
+	padding: 20px;
+	font-size: 300%;	
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+h3 {
+	background-color: #73192A;
+	color: #d9d9d9;
+	text-transform: uppercase;
+}
+
+h4 {
+	background-color: #73192A;
+	color: #d9d9d9;
+	text-indent: -1000px;
+}
+   
+footer { 
+	background-color: #73192A; 
+    color: #000000;
+	text-align: center;
+	font-style: italic;
+	font-size: .60em;
+	margin-left: 20vw;
+	margin-right: 20vw;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#wrapper {
+	width: 800px;
+	margin-left: auto; margin-right: auto; 
+	box-shadow: 3px 3px 3px #2E0000;
+	
+}
+
+#mobile {
+	display: none;
+}
+
+#desktop {
+	display: inline;
+}
+
+@media only screen and (max-width: 64em) {
+	header h1 { font-size: 5vw; }
+	body { margin: 0; }
+	nav { padding-top: 5px; padding-bottom: 5px; }
+	nav a { display: block; font-size: 80%; }
+	nav li { display: inline-block; width: 5em; font-size: 2vw; text-align: center; box-shadow: 2px 2px 2px #330000; background-color: #000000; margin: 1%; padding: 1.5%; }
+	#wrapper { width: 65vw; margin-left: auto; margin-right: auto; box-shadow: 3px 3px 3px #2E0000; }
+	h1 { margin: 0; }
+	main { margin: 0; }
+	footer { margin-left: 0; margin-right: 0; }
+}
+
+@media only screen and (max-width: 37.5em) {
+	header h1 {font-size: 4vw; }
+	nav a { display: block; font-size: 75%; }
+	nav li { display: inline-block; width: 5em; font-size: 120%; text-align: center; box-shadow: 2px 2px 2px #330000; background-color: #000000; margin: 1%; padding: 2.5%; }
+	#mobile { display: inline; }
+	#desktop { display: none; }
+
+}
+
